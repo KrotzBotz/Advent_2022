@@ -5,8 +5,6 @@ fn main() {
 
     let contents = fs::read_to_string(file_path).expect("idc");
 
-    //split contents by \r\n
-
     let mut elves = vec![];
 
     contents.split("\r\n\r\n").for_each(|lines| {
